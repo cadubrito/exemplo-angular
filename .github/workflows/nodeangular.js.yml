@@ -25,6 +25,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: install npm
+      run: |
+        sudo apt install npm
     - name: Install Dependencies
       run: |
         cd landPages &&
