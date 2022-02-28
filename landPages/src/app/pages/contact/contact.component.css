@@ -1,0 +1,27 @@
+.container-contact {
+  display: grid;
+                      /* 1 fraçao para o padrão 12 colunas */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                      /* 20vh herder, nav 5vh, content 50vh, footer 20vh*/
+  grid-template-rows: 20vh 5vh 55vh 20vh;
+  grid-template-areas:"header header header header header header header header header header header header"
+                      "nav  nav nav nav nav nav nav nav nav nav nav nav"
+                      "content content content content content content content content content content content content"
+                      "footer footer footer footer footer footer footer footer footer footer footer footer"
+  ;
+}
+.header{
+  grid-area: header;
+}
+
+.nav{
+  grid-area: nav;
+}
+
+.content{
+  grid-area: content;
+}
+
+.footer{
+  grid-area: footer;
+}
