@@ -30,7 +30,8 @@ jobs:
     - run: npm test
     - name: Install Dependencies
       run: |
+        cd landPages &&
         npm install
     - name: Run Tests
       run: |
-       ng test && ng test --code-coverage
+         cd landPages && ng test && ng test --code-coverage
